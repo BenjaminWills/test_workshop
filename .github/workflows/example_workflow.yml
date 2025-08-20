@@ -1,0 +1,16 @@
+name: Example GitHub action
+
+# When to run the action
+on: 
+  pull_request:
+    branches:
+      - main
+
+# What to do when the action is activated
+jobs:
+  echo:
+    name: Echo a string
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "My action is running!!!!"
